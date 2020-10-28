@@ -24,6 +24,7 @@ public class Main {
 		
 		switch (method) {
 		case "GET":
+			sc.close();
 			RestClientGet restClientGet = new RestClientGet(new URL(url));
 			restClientGet.connection();
 			break;
@@ -31,6 +32,7 @@ public class Main {
 			System.out.println("Body:");
 			String body = sc.nextLine();
 			RestClientPost restClientPost = new RestClientPost(new URL(url), body);
+			sc.close();
 			restClientPost.connection();
 			break;
 
