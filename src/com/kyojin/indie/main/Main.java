@@ -15,6 +15,7 @@ public class Main {
 		RestClientGet restClientGet = new RestClientGet(new URL("http://localhost:8080/api/v1/person"));
 		logo.printLogo();
 		restClientGet.connection();
+		System.out.println();
 
 	}
 
